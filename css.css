@@ -1,0 +1,73 @@
+table th {
+  text-align: left;
+  background: #f15b19;
+  padding: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+table td:first-child {
+  text-transform: uppercase;
+}
+table td {
+  color: #000;
+  height: 25px;
+  text-align: left;
+  padding: 5px;
+  vertical-align: middle;
+  padding-left: 1rem;
+}
+
+table {
+  overflow-x: auto;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: #555;
+}
+table tr:nth-child(odd) {
+  background: #fafafa;
+}
+
+table tr:nth-child(even) {
+  background: #efefef;
+}
+
+body {
+  background: #fafafa;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#pastein {
+  border: 2px solid #3e3e3e;
+  width: 400px;
+  height: 250px;
+  resize: none;
+}
+
+.excel_table {
+  margin: 0 auto;
+}
+#excel_table {
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+}
+#output {
+  width: 500px;
+  margin: 0 auto;
+  background: #555;
+  padding: 20px;
+  color: white;
+}
