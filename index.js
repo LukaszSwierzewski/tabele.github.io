@@ -23,19 +23,25 @@ function generateTable() {
   $("#excel_table").html(table);
 }
 
-$(document).ready(function() {
-  $("#pastein").on("paste", function(event) {
-    $("#pastein").on("input", function() {
-      generateTable();
+// $(document).ready(function() {
+//   $("#pastein").on("paste", function(event) {
+//     $("#pastein").on("input", function() {
+//       generateTable();
 
-      $("#pastein").off("input");
-      var head2 = document.querySelector("#tabelka6");
-      var deletedNode = head2.childNodes[1];
-      head2.removeChild(deletedNode);
-      var plainText = document.querySelectorAll("#tabelka6")[0];
-      console.log(plainText.outerHTML);
-      var output = document.querySelector("#output");
-      output.innerText = plainText.outerHTML;
-    });
-  });
+//       $("#pastein").off("input");
+
+//     });
+//   });
+// });
+
+var btn = document.querySelector("#generate");
+btn.addEventListener("click", e => {
+  generateTable();
+  var head2 = document.querySelector("#tabelka6");
+  var deletedNode = head2.childNodes[1];
+  head2.removeChild(deletedNode);
+  var plainText = document.querySelectorAll("#tabelka6")[0];
+  console.log(plainText.outerHTML);
+  var output = document.querySelector("#output");
+  output.innerText = plainText.outerHTML;
 });
