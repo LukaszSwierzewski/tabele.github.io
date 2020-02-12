@@ -15,34 +15,48 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Generator tabel</h2>
-      <h4>Wklej tabele z excela w tym polu:</h4>
-      <textarea id="pastein" rows="10" cols="50" name="excel_data"></textarea>
-      <div
-        class="alert alert-warning"
-        style="width: 400px; margin: 0 auto"
-        role="alert"
-      >
-        Przed skopiowaniem kodu HTML tabeli zwróć uwagę czy ostatni albo
-        pierwszy wiersz tabeli nie jest pusty. Jeżeli tak to usuń puste pole
-        przyciskiem backspace i wygeneruj tabele od nowa.
+    <div class="layout">
+      <div class="container">
+        <div class="set__height">
+          <h2>Generator tabel</h2>
+          <h4>Wklej tabele z excela w tym polu:</h4>
+          <textarea
+            id="pastein"
+            rows="10"
+            cols="50"
+            name="excel_data"
+          ></textarea>
+          <div
+            class="alert alert-warning"
+            style="width: 400px; margin: 0 auto"
+            role="alert"
+          >
+            Przed skopiowaniem kodu HTML tabeli zwróć uwagę czy ostatni albo
+            pierwszy wiersz tabeli nie jest pusty. Jeżeli tak to usuń puste pole
+            przyciskiem backspace i wygeneruj tabele od nowa.
+          </div>
+          <button class="btn btn-primary" id="generate">
+            wygeneruj tabele
+          </button>
+        </div>
       </div>
-      <button class="btn btn-primary mt-4" id="generate">
-        wygeneruj tabele
-      </button>
-    </div>
-    <br /><br />
-    <hr />
-    <div class="grid">
-      <div>
-        <h2>WYGLĄD TABELI</h2>
+      <br /><br />
+      <hr />
+      <div class="grid">
+        <div>
+          <h2>WYGLĄD TABELI</h2>
+        </div>
+        <div>
+          <h2>KOD HTML</h2>
+        </div>
+        <div id="excel_table"></div>
+        <div id="output"></div>
       </div>
-      <div>
-        <h2>KOD HTML</h2>
-      </div>
-      <div id="excel_table"></div>
-      <div id="output"></div>
+      <footer>
+        <div class="footer">
+          <p class="text-center">xDDDDD</p>
+        </div>
+      </footer>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
