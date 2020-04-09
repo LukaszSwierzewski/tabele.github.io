@@ -23,19 +23,8 @@ function generateTable() {
   $("#excel_table").html(table);
 }
 
-// $(document).ready(function() {
-//   $("#pastein").on("paste", function(event) {
-//     $("#pastein").on("input", function() {
-//       generateTable();
-
-//       $("#pastein").off("input");
-
-//     });
-//   });
-// });
-
 var btn = document.querySelector("#generate");
-btn.addEventListener("click", e => {
+btn.addEventListener("click", (e) => {
   generateTable();
   var head2 = document.querySelector("#tabelka6");
   var deletedNode = head2.childNodes[1];
@@ -45,3 +34,23 @@ btn.addEventListener("click", e => {
   var output = document.querySelector("#output");
   output.innerText = plainText.outerHTML;
 });
+function submit() {
+  document.querySelector("#list").innerHTML = "";
+  var guestName = document.getElementById("text");
+  var listData = guestName.value.split("\n");
+
+  var listContainer = document.getElementById("list"),
+    listElement = document.createElement("ul");
+  listContainer.appendChild(listElement);
+  var numberOfListItems = listData.length;
+  var listItem;
+  for (var i = 0; i < numberOfListItems; ++i) {
+    listItem = document.createElement("li");
+    listItem.innerHTML = listData[i];
+    listElement.appendChild(listItem);
+  }
+  let htmlList = document.querySelector("#list");
+  console.log(htmlList.innerHTML);
+  const htmlOutput = document.querySelector("#listHtml");
+  htmlOutput.innerText = htmlList.innerHTML;
+}

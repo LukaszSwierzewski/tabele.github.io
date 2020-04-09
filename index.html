@@ -16,10 +16,10 @@
   </head>
   <body>
     <div class="layout">
-      <div class="container">
+      <div class="row centered">
+        <div class='col-6'>
         <div class="set__height">
           <h2>Generator tabel</h2>
-          <h4>Wklej tabele z excela w tym polu:</h4>
           <textarea
             id="pastein"
             rows="10"
@@ -39,18 +39,47 @@
             wygeneruj tabele
           </button>
         </div>
-      </div>
+     
       <br /><br />
       <hr />
       <div class="grid">
         <div>
-          <h2>WYGLĄD TABELI</h2>
+          <h5>WYGLĄD TABELI</h5>
         </div>
         <div>
-          <h2>KOD HTML</h2>
+          <h5>KOD HTML</h5>
         </div>
         <div id="excel_table"></div>
         <div id="output"></div>
+      </div>
+      </div>
+            <div class="col-6">
+              <h2>Generator list</h2>
+             
+              <textarea class='pastein' id="text"></textarea>
+              <br />
+              <div class="alert alert-warning" style="width: 400px; margin: 0 auto" role="alert">
+                Przed skopiowaniem kodu HTML upewnij się, że nie ma pustych kropek w wyglądzie listy xD
+              </div>
+              <button class='btn btn-primary' id="submit" onclick="submit();">Wygeneruj liste</button>
+              
+              <div class='container row'>
+              <div class="guestList col-6 mt-3 mb-3">
+                <h5>Wygląd listy:</h5>
+                <div id="list"></div>
+              </div>
+              <div class='col-6 output'>
+                <h5>Kod HTML</h5>
+                <div id='listHtml'>
+
+                </div>
+              </div>
+              </div>
+            </div>
+            
+      </div>
+ 
+     
       </div>
       <footer>
         <div class="footer">

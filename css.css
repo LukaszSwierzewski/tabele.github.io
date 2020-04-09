@@ -52,7 +52,12 @@ body {
   height: 200px;
   resize: none;
 }
-
+.pastein {
+  border: 2px solid #3e3e3e;
+  width: 500px;
+  height: 200px;
+  resize: none;
+}
 .excel_table {
   margin: 0 auto;
 }
@@ -65,7 +70,6 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 #output {
-  width: 500px;
   margin: 0 auto;
   background: #555;
   padding: 20px;
@@ -89,4 +93,19 @@ body {
 
 .footer p {
   color: #eee;
+}
+.output {
+  width: 500px;
+  margin: 0 auto;
+  background: #555;
+  padding: 20px;
+  color: white;
+}
+.centered {
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  overflow-x: hidden;
 }
