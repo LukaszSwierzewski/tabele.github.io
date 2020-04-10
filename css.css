@@ -75,9 +75,7 @@ body {
   padding: 20px;
   color: white;
 }
-.set__height {
-  height: 50vh;
-}
+
 .footer {
   margin-top: 10vh;
   /* position: absolute;
@@ -108,4 +106,26 @@ body {
 
 body {
   overflow-x: hidden;
+}
+#listHtml {
+  width: 100%;
+  min-height: 400px;
+  max-height: 500px;
+  resize: none;
+}
+
+#output {
+  width: 90%;
+  color: black;
+  margin-top: 10px;
+  min-height: 390px;
+  background: white;
+}
+.tableH {
+  background: #555;
+}
+#copyAgain {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }

@@ -26,21 +26,11 @@
             cols="50"
             name="excel_data"
           ></textarea>
-          <div
-            class="alert alert-warning"
-            style="width: 400px; margin: 0 auto"
-            role="alert"
-          >
-            Przed skopiowaniem kodu HTML tabeli zwróć uwagę czy ostatni albo
-            pierwszy wiersz tabeli nie jest pusty. Jeżeli tak to usuń puste pole
-            przyciskiem backspace i wygeneruj tabele od nowa.
-          </div>
+          <br>
           <button class="btn btn-primary" id="generate">
             wygeneruj tabele
           </button>
         </div>
-     
-      <br /><br />
       <hr />
       <div class="grid">
         <div>
@@ -50,7 +40,10 @@
           <h5>KOD HTML</h5>
         </div>
         <div id="excel_table"></div>
-        <div id="output"></div>
+        <div class='tableH'>
+        <textarea id='output'></textarea>
+        <button class='btn btn-info' id='copyAgain'>Kopiuj</button>
+        </div>
       </div>
       </div>
             <div class="col-6">
@@ -58,9 +51,7 @@
              
               <textarea class='pastein' id="text"></textarea>
               <br />
-              <div class="alert alert-warning" style="width: 400px; margin: 0 auto" role="alert">
-                Przed skopiowaniem kodu HTML upewnij się, że nie ma pustych kropek w wyglądzie listy xD
-              </div>
+          
               <button class='btn btn-primary' id="submit" onclick="submit();">Wygeneruj liste</button>
               
               <div class='container row'>
@@ -70,9 +61,10 @@
               </div>
               <div class='col-6 output'>
                 <h5>Kod HTML</h5>
-                <div id='listHtml'>
-
-                </div>
+                <textarea id='listHtml'>
+                    
+                </textarea>
+                <button class='btn btn-info col-12' id='copy'>Kopiuj</button>
               </div>
               </div>
             </div>
